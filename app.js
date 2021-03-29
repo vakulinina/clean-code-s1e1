@@ -89,8 +89,6 @@ var editTask = function () {
   var label = listItem.querySelector(".task-label");
   var editBtn = listItem.querySelector(".btn__edit");
   var containsClass = listItem.classList.contains("edit-mode");
-  console.log(editInput);
-  console.log(listItem);
   //If class of the parent is .editmode
 
   if (containsClass) {
@@ -171,7 +169,7 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
 //select ListItems children
   var checkBox = taskListItem.querySelector(".task-item__cb");
   var editButton = taskListItem.querySelector(".btn__edit");
-  var deleteButton = taskListItem.querySelector(".btn__delete");
+  var deleteButton = taskListItem.querySelector(".btn_delete");
 
 
   //Bind editTask to edit button.
