@@ -97,12 +97,12 @@ var editTask = function () {
     //switch to .editmode
     //label becomes the inputs value.
     label.innerText = editInput.value;
-    label.classList.remove('task-label_edit-mode');
+    label.classList.remove('task-item__task-label_edit-mode');
     editInput.classList.remove('task-item__input-text_edit-mode');
     editBtn.innerText = "Edit";
   } else {
     editInput.value = label.innerText;
-    label.classList.add('task-label_edit-mode');
+    label.classList.add('task-item__task-label_edit-mode');
     editInput.classList.add('task-item__input-text_edit-mode');
 
     editBtn.innerText = "Save";
@@ -136,8 +136,8 @@ var taskCompleted = function () {
   var editBtn = listItem.querySelector(".btn_edit");
   var editInput = listItem.querySelector('.task-item__input-text');
 
-  label.classList.remove('task-label_edit-mode');
-  label.classList.add('task-label_complete');
+  label.classList.remove('task-item__task-label_edit-mode');
+  label.classList.add('task-item__task-label_complete');
   editInput.classList.remove('task-item__input-text_edit-mode');
   editBtn.innerText = "Edit";
   completedTasksHolder.appendChild(listItem);
@@ -152,7 +152,7 @@ var taskIncomplete = function () {
   //Append the task list item to the #incompleteTasks.
   var listItem = this.parentNode;
   var label = listItem.querySelector('.task-label');
-  label.classList.remove('task-label_complete');
+  label.classList.remove('task-item__task-label_complete');
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
 }

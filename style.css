@@ -158,7 +158,7 @@ button {
 }
 
 /* Completed */
-.task-label_complete {
+.task-item__task-label_complete {
   text-decoration: line-through;
   color: #888;
 }
@@ -167,7 +167,7 @@ button {
 .task-item__input-text {
   display: none;
 }
-.task-label_edit-mode {
+.task-item__task-label_edit-mode {
   display: none
 }
 
