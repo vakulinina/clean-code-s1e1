@@ -110,9 +110,6 @@ button {
   width: 318px;
 }
 
-.task-wrap__btn:hover {
-  color: #0FC57C;
-}
 
 /* Task list */
 .task-item {
