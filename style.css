@@ -106,7 +106,7 @@ button {
   margin: 0 0 20px;
 }
 
-.input-text_long{
+.input-text_long {
   width: 318px;
 }
 
@@ -164,6 +164,7 @@ button {
 .task-item__input-text {
   display: none;
 }
+
 .task-item__task-label_edit-mode {
   display: none
 }
