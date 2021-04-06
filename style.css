@@ -32,7 +32,8 @@ body {
   margin: 0 auto 0;
 }
 
-.input-text, .task-label {
+.input-text, 
+.task-label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
